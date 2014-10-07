@@ -6,3 +6,6 @@ yum install -y openssl vim git yum openssl-devel httpd java-1.7.0
 # fluentd インストール
 curl -L http://toolbelt.treasuredata.com/sh/install-redhat.sh | sh
 service td-agent start
+
+cp /vagrant/script/elasticsearch.repo /etc/yum.repos.d/
+yum -y install elasticsearch
